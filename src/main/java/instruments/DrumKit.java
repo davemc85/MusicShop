@@ -1,6 +1,8 @@
 package instruments;
 
-public class DrumKit extends Instrument {
+import interfaces.IPlay;
+
+public class DrumKit extends Instrument implements IPlay {
 
     private int numberOfDrums;
 
@@ -15,5 +17,9 @@ public class DrumKit extends Instrument {
 
     public void setNumberOfDrums(int numberOfDrums) {
         this.numberOfDrums = numberOfDrums;
+    }
+
+    public String makeSound(){
+        return "da-dum-da-dum";
     }
 }

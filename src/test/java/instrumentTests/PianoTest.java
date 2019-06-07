@@ -82,5 +82,9 @@ public class PianoTest {
         assertEquals("Upright", piano.getType());
     }
 
+    @Test
+    public void canMakeSound(){
+        assertEquals("Tickling the ivories", piano.makeSound());
+    }
 
 }

@@ -1,6 +1,8 @@
 package instruments;
 
-public class Guitar extends Instrument{
+import interfaces.IPlay;
+
+public class Guitar extends Instrument implements IPlay {
 
     private String type;
 
@@ -15,5 +17,9 @@ public class Guitar extends Instrument{
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String makeSound(){
+        return "Strummy strum strum";
     }
 }

@@ -83,4 +83,9 @@ public class GuitarTest {
         assertEquals("Acoustic", guitar.getType());
     }
 
+    @Test
+    public void canMakeSound(){
+        assertEquals("Strummy strum strum", guitar.makeSound());
+    }
+
 }

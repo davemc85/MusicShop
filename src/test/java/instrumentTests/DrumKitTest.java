@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class DrumKitTest {
 
@@ -80,5 +81,10 @@ public class DrumKitTest {
     public void canSetNumberOfDrums(){
         drumKit.setNumberOfDrums(4);
         assertEquals(4, drumKit.getNumberOfDrums());
+    }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("da-dum-da-dum", drumKit.makeSound());
     }
 }

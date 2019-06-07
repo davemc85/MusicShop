@@ -16,4 +16,8 @@ public class Saxophone extends Instrument {
     public void setReedIncluded(boolean reedIncluded) {
         this.reedIncluded = reedIncluded;
     }
+
+    public String makeSound(){
+        return "Jazzy blues";
+    }
 }

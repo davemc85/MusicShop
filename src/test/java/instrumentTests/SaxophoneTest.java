@@ -5,7 +5,7 @@ import instruments.Saxophone;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class SaxophoneTest {
 
@@ -70,5 +70,21 @@ public class SaxophoneTest {
     public void canSetMaterial(){
         saxophone.setMaterial("Copper");
         assertEquals("Copper", saxophone.getMaterial());
+    }
+
+    @Test
+    public void checkReedIsIncluded(){
+        assertTrue(saxophone.isReedIncluded());
+    }
+
+    @Test
+    public void checkCanSetIsReedIncluded(){
+        saxophone.setReedIncluded(false);
+        assertFalse(saxophone.isReedIncluded());
+    }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("Jazzy blues", saxophone.makeSound());
     }
 }

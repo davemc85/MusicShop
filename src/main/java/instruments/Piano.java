@@ -16,4 +16,8 @@ public class Piano extends Instrument {
     public void setType(String type) {
         this.type = type;
     }
+
+    public String makeSound(){
+        return "Tickling the ivories";
+    }
 }
