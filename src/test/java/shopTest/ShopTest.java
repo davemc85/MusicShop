@@ -72,7 +72,7 @@ public class ShopTest {
     }
 
     @Test
-    public void canCalculateProfitAvailable(){
+    public void canCalculateProfit(){
         shop.addStock(guitar);
         shop.addStock(drumKit);
         assertEquals(1650, shop.calcuateProfit(), 0.00);
