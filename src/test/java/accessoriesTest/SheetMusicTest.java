@@ -1,6 +1,5 @@
 package accessoriesTest;
 
-import accessories.DrumSticks;
 import accessories.SheetMusic;
 import org.junit.Before;
 import org.junit.Test;
