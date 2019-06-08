@@ -13,7 +13,7 @@ public class SaxophoneTest {
 
     @Before
     public void setUp(){
-        saxophone = new Saxophone("Yamaha", 749, 450, Family.WOODWIND, "Brass", true);
+        saxophone = new Saxophone("Yamaha", 750, 450, Family.WOODWIND, "Brass", true);
     }
 
 
@@ -30,7 +30,7 @@ public class SaxophoneTest {
 
     @Test
     public void canGetSellingPrice(){
-        assertEquals(749, saxophone.getSellingPrice(), 0.00);
+        assertEquals(750, saxophone.getSellingPrice(), 0.00);
     }
 
     @Test
@@ -86,5 +86,10 @@ public class SaxophoneTest {
     @Test
     public void canMakeSound(){
         assertEquals("Jazzy blues", saxophone.makeSound());
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(300, saxophone.calculateMarkup(), 0.00);
     }
 }

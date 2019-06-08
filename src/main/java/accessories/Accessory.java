@@ -1,21 +1,17 @@
-package instruments;
+package accessories;
 
 import interfaces.ISell;
 
-public abstract class Instrument implements ISell {
+public abstract class Accessory implements ISell {
 
     private String name;
     private double sellingPrice;
     private double purchasedPrice;
-    private Family family;
-    private String material;
 
-    public Instrument(String name, double sellingPrice, double purchasedPrice, Family family, String material){
+    public Accessory(String name, double sellingPrice, double purchasedPrice){
         this.name = name;
         this.sellingPrice = sellingPrice;
         this.purchasedPrice = purchasedPrice;
-        this.family = family;
-        this.material = material;
     }
 
     public String getName() {
@@ -42,23 +38,7 @@ public abstract class Instrument implements ISell {
         this.purchasedPrice = purchasedPrice;
     }
 
-    public Family getFamily() {
-        return family;
-    }
-
-    public void setFamily(Family family) {
-        this.family = family;
-    }
-
-    public String getMaterial() {
-        return material;
-    }
-
-    public void setMaterial(String material) {
-        this.material = material;
-    }
-
     public double calculateMarkup(){
-        return this.sellingPrice - this.purchasedPrice;
+        return sellingPrice - purchasedPrice;
     }
 }

@@ -87,4 +87,9 @@ public class DrumKitTest {
     public void canMakeSound(){
         assertEquals("da-dum-da-dum", drumKit.makeSound());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(650, drumKit.calculateMarkup(), 0.00);
+    }
 }

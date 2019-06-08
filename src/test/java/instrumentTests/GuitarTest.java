@@ -88,4 +88,9 @@ public class GuitarTest {
         assertEquals("Strummy strum strum", guitar.makeSound());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(1000, guitar.calculateMarkup(), 0.00);
+    }
+
 }

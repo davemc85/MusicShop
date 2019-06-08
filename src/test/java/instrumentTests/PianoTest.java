@@ -87,4 +87,9 @@ public class PianoTest {
         assertEquals("Tickling the ivories", piano.makeSound());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(40000, piano.calculateMarkup(), 0.00);
+    }
+
 }
